@@ -41,6 +41,7 @@ RO_FUNC = [
     'sdiff',
     'sdiffstore',
     'sinter',
+    'sismember',
     'smembers',
     'srandmember',
     'strlen',
