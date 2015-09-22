@@ -12,14 +12,10 @@ def get_long_description():
 
     with open(os.path.join(here, 'README.rst'), encoding='utf-8') as description:
         return description.read()
-
-def get_version():
-    """ Retrieve version information from the package """
-    return __import__('autoredis').__version__
     
 setup(
     name='AutoRedis',
-    version=get_version(),
+    version='0.1.0',
     description='AutoRedis - Balance your Redis commands accross your master/slaves',
     long_description=get_long_description(),
     author='Emmanuel Vadot',
