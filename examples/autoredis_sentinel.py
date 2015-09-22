@@ -16,7 +16,8 @@ if __name__ == '__main__':
         try:
             print(AUTO_REDIS.smembers('myset'))
             print(AUTO_REDIS.on_master('ping'))
-            print(AUTO_REDIS.on_slave(('127.0.0.1', 6381), 'ping'))
+            if AUTO_REDIS.slaves:
+                print(AUTO_REDIS.on_slave(('127.0.0.1', 6381), 'ping'))
         except RedisConnectionError:
             print('No slave or master up')
             sys.exit(1)
