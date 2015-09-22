@@ -15,7 +15,7 @@ def get_long_description():
     
 setup(
     name='AutoRedis',
-    version='0.1.0',
+    version='0.2.0',
     description='AutoRedis - Balance your Redis commands accross your master/slaves',
     long_description=get_long_description(),
     author='Emmanuel Vadot',
