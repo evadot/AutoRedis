@@ -102,6 +102,7 @@ RW_FUNC = [
     'pfadd',
     'pfmerge',
     'psetex',
+    'register_script',
     'rename',
     'renamenx',
     'restore',
